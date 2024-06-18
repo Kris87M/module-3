@@ -2,6 +2,11 @@
 
 //Variables
 $font-gold: "Pacifico", cursive;
+$color-one: gold;
+$color-two: black;
+$color-three: white;
+$color-four: grey;
+$color-five: lightgrey;
 
 //Global
 
@@ -30,16 +35,16 @@ $font-gold: "Pacifico", cursive;
 }
 
 .brand {
-    color: gold;
+    color: $color-one;
     font-family: $font-gold;
 }
 .navigation a {
     text-decoration: none;
-    color: white;
+    color: $color-three;
 }
 
 .navigation a:hover {
-    color: gold;
+    color: $color-one;
 }
 
 .list {
@@ -63,22 +68,26 @@ $font-gold: "Pacifico", cursive;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: $color-three;
 }
 
 h1 {
     font-size: 50px;
 }
+
+p {
+    color: $color-four;
+}
 .btn {
     display: inline-block;
     min-width: 200px;
-    background-color: gold;
+    background-color: $color-one;
     text-decoration: none;
     font-weight: 800;
-    color: white;
+    color: $color-three;
     margin: 20px auto 0 auto;
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid $color-two;
     border-radius: 5px;
     cursor: pointer;
     transition: all 1s;
@@ -121,8 +130,8 @@ h1 {
     height: 70px;
     width: 70px;
     padding-top: 10px;
-    color: gold;
-    border: 5px solid gold;
+    color: $color-one;
+    border: 5px solid $color-one;
     border-radius: 50%;
 }
 
@@ -144,11 +153,11 @@ img {
     object-fit: cover;
 }
 .our-portfolio {
-    background-color: lightgrey;
+    background-color: $color-five;
 }
 
 .p-box {
-    background-color: white;
+    background-color: $color-three;
     margin: 30px 15px;
 }
 //Footer
@@ -169,8 +178,8 @@ img {
     width: 25px;
     padding-top: 5px;
     border-radius: 50%;
-    color: #ffffff;
-    background-color: #000000;
+    color: $color-three;
+    background-color: $color-two;
     cursor: pointer;
     transition: all 1s;
 }
